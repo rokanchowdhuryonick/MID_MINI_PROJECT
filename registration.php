@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
 		  $_SESSION['success'] = '<font color="green">Registration success..</font>';
 		  header('Location: login.php');
 		} else {
-		  $error = "<font color='red'>Registration failed!</font>".mysqli_error($conn);
+		  $error = "<font color='red'>Registration failed!</font>";
 		}
 
 		mysqli_close($conn);
