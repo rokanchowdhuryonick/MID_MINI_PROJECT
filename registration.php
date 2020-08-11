@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
 	}else if ($password !=$confirmPassword) {
 		$error = "<font color='red'>Two password not matched</font>";
 	}else{
-		$query = "INSERT INTO users (username, password, name, email, userType) VALUES ('$userId', '$password', '$name', '$email', '$userType')";
+		$query = "INSERT INTO users (userId, password, name, email, userType) VALUES ('$userId', '$password', '$name', '$email', '$userType')";
 		if (mysqli_query($conn, $query)) {
 		  $_SESSION['success'] = '<font color="green">Registration success..</font>';
 		  header('Location: login.php');

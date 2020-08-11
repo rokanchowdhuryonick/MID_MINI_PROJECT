@@ -11,7 +11,7 @@ if (isset($_POST['login'])) {
 	if (empty($userId) || empty($password)) {
 		$error = "<font color='red'>Required field is empty</font>";
 	}else{
-		$query=mysqli_query($conn, "SELECT * FROM users WHERE username='$userId' AND password='$password'");
+		$query=mysqli_query($conn, "SELECT * FROM users WHERE userId='$userId' AND password='$password'");
 		//var_dump($query);
 		 if(mysqli_num_rows($query)>=1)
 		   {

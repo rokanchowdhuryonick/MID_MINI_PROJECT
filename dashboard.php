@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once 'config.php';
 
 if (!isset($_SESSION['status']) || !isset($_SESSION['userType'])) {
 	header('location:login.php');
