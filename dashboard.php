@@ -17,7 +17,7 @@ if (!isset($_SESSION['status']) || !isset($_SESSION['userType'])) {
 		<a href="change_password.php">Change Password</a><br>
 		<?php if ($_SESSION['userType']=='admin') {
 		?>
-		<a href="view_users.php">View Users</a><br>
+		<a href="users.php">View Users</a><br>
 		<?php } ?>
 		<a href="logout.php">Logout</a>
 	</td></tr>

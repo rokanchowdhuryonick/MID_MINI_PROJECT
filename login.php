@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once 'config.php';
-if (isset($_SESSION['user']) && isset($_SESSION['status'])) {
+if (isset($_SESSION['status']) && $_SESSION['status']==1) {
 	header('location:dashboard.php');
 	exit();
 }
